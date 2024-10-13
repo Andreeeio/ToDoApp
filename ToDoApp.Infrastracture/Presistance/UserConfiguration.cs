@@ -24,5 +24,8 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
         builder.HasIndex(p => p.Phone)
             .IsUnique();
 
+        builder.HasMany(r => r.Roles)
+            .WithMany(r => r.Users);
+
     }
 }

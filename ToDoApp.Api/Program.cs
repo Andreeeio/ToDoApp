@@ -1,22 +1,25 @@
 using ToDoApp.Infrastracture.Extentions;
+using ToDoApp.Infrastracture.Seeder;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 
 builder.Services.AddControllers();
 builder.Services.AddInfrastracture(builder.Configuration);
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+var scope = app.Services.CreateScope();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+
+    var seeder = scope.ServiceProvider.GetRequiredService<IToDoAppSeeder>();
+    await seeder.Seed();
 }
 
 app.UseHttpsRedirection();

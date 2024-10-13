@@ -295,3 +295,4 @@ C:\Users\Konradl\Desktop\projekty\WebApi\ToDoApp.Api\ToDoApp.Api\obj\Debug\net8.
 C:\Users\Konradl\Desktop\projekty\WebApi\ToDoApp.Api\ToDoApp.Api\obj\Debug\net8.0\ToDoApp.Api.pdb
 C:\Users\Konradl\Desktop\projekty\WebApi\ToDoApp.Api\ToDoApp.Api\obj\Debug\net8.0\ToDoApp.Api.genruntimeconfig.cache
 C:\Users\Konradl\Desktop\projekty\WebApi\ToDoApp.Api\ToDoApp.Api\obj\Debug\net8.0\ref\ToDoApp.Api.dll
+C:\Users\Konradl\Desktop\projekty\WebApi\ToDoApp.Api\ToDoApp.Api\bin\Debug\net8.0\Bogus.dll

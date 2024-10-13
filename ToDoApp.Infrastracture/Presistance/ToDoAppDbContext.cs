@@ -12,8 +12,8 @@ namespace ToDoApp.Infrastracture.Presistance;
 public class ToDoAppDbContext(DbContextOptions<ToDoAppDbContext> options) : DbContext(options)
 {
     public DbSet<Assignment> Assignments { get; set; }
-    public  DbSet<User> users { get; set; }
-
+    public  DbSet<User> Users { get; set; }
+    public DbSet<Roles> Roles { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

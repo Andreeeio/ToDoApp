@@ -11,5 +11,6 @@ public class User
     public bool IsEmailConfirmed { get; set; }
     public byte[] PasswordHash { get; set; } = default!;
     public byte[] PasswordSalt { get; set; } = default!;
-    public List<Assignment> Assignments { get; set; }
+    public List<Assignment> Assignments { get; set; } = default!; 
+    public List<Roles> Roles{ get; set; } = default!;
 }

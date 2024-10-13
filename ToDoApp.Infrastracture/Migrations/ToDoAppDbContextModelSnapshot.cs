@@ -22,6 +22,21 @@ namespace ToDoApp.Infrastracture.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("RolesUser", b =>
+                {
+                    b.Property<int>("RolesId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UsersId")
+                        .HasColumnType("int");
+
+                    b.HasKey("RolesId", "UsersId");
+
+                    b.HasIndex("UsersId");
+
+                    b.ToTable("RolesUser");
+                });
+
             modelBuilder.Entity("ToDoApp.Domain.Entities.Assignment", b =>
                 {
                     b.Property<int>("Id")
@@ -34,13 +49,13 @@ namespace ToDoApp.Infrastracture.Migrations
                         .HasColumnType("date");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateOnly>("Expired")
                         .HasColumnType("date");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("User_Id")
@@ -51,6 +66,23 @@ namespace ToDoApp.Infrastracture.Migrations
                     b.HasIndex("User_Id");
 
                     b.ToTable("Assignments");
+                });
+
+            modelBuilder.Entity("ToDoApp.Domain.Entities.Roles", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Roles");
                 });
 
             modelBuilder.Entity("ToDoApp.Domain.Entities.User", b =>
@@ -99,7 +131,22 @@ namespace ToDoApp.Infrastracture.Migrations
                         .IsUnique()
                         .HasFilter("[Phone] IS NOT NULL");
 
-                    b.ToTable("users");
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("RolesUser", b =>
+                {
+                    b.HasOne("ToDoApp.Domain.Entities.Roles", null)
+                        .WithMany()
+                        .HasForeignKey("RolesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ToDoApp.Domain.Entities.User", null)
+                        .WithMany()
+                        .HasForeignKey("UsersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("ToDoApp.Domain.Entities.Assignment", b =>
