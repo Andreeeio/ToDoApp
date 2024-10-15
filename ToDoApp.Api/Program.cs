@@ -1,11 +1,13 @@
 using ToDoApp.Infrastracture.Extentions;
 using ToDoApp.Infrastracture.Seeder;
+using ToDoApp.Application.Extentions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddControllers();
 builder.Services.AddInfrastracture(builder.Configuration);
+builder.Services.AddAplication();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

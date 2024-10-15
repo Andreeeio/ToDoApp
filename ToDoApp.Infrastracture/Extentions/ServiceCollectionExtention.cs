@@ -1,7 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ToDoApp.Domain.Repositories;
 using ToDoApp.Infrastracture.Presistance;
+using ToDoApp.Infrastracture.Repositories;
 using ToDoApp.Infrastracture.Seeder;
 
 namespace ToDoApp.Infrastracture.Extentions;
@@ -14,5 +16,6 @@ public static class ServiceCollectionExtention
         services.AddDbContext<ToDoAppDbContext>(options => options.UseSqlServer(connectionString));
 
         services.AddScoped<IToDoAppSeeder, ToDoAppSeeder>();
+        services.AddScoped<IUserRepositories,UserRepositories>();
     }
 }
