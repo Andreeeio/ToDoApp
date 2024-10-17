@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "vK1uYx26eaM=",
+  "dgSpecHash": "S0pFB4dwXi0=",
   "success": true,
   "projectFilePath": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Application\\ToDoApp.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Konradl\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\Konradl\\.nuget\\packages\\fluentvalidation\\11.10.0\\fluentvalidation.11.10.0.nupkg.sha512",
+    "C:\\Users\\Konradl\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\Konradl\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\Konradl\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
     "C:\\Users\\Konradl\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\Konradl\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

@@ -8,6 +8,8 @@ public class User
     public string Email { get; set; } = default!;
     public string? Phone { get; set; } = default!;
     public DateOnly DateOfBirth { get; set; }
+    public DateTime? ConfirmationTokenExpiration {  get; set; }
+    public string? ConfirmationToken { get; set; } = default!;
     public bool IsEmailConfirmed { get; set; }
     public byte[] PasswordHash { get; set; } = default!;
     public byte[] PasswordSalt { get; set; } = default!;

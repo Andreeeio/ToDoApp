@@ -93,6 +93,12 @@ namespace ToDoApp.Infrastracture.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("ConfirmationToken")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("ConfirmationTokenExpiration")
+                        .HasColumnType("datetime2");
+
                     b.Property<DateOnly>("DateOfBirth")
                         .HasColumnType("date");
 

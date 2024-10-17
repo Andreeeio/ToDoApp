@@ -3,36 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37E94ACB-3178-4544-A57E-C6C1D41D6314}|ToDoApp.Api\\ToDoApp.Api.csproj|c:\\users\\konradl\\desktop\\projekty\\webapi\\todoapp.api\\todoapp.api\\controllers\\usercontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37E94ACB-3178-4544-A57E-C6C1D41D6314}|ToDoApp.Api\\ToDoApp.Api.csproj|solutionrelative:todoapp.api\\controllers\\usercontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF5F7FDF-BB9E-43F3-ACEA-BE006618A39A}|ToDoApp.Application\\ToDoApp.Application.csproj|c:\\users\\konradl\\desktop\\projekty\\webapi\\todoapp.api\\todoapp.application\\users\\query\\getuserbyid\\getuserbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF5F7FDF-BB9E-43F3-ACEA-BE006618A39A}|ToDoApp.Application\\ToDoApp.Application.csproj|solutionrelative:todoapp.application\\users\\query\\getuserbyid\\getuserbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8322AC13-81F9-42D6-BA03-DEEC7AB9EF65}|ToDoApp.Infrastracture\\ToDoApp.Infrastracture.csproj|c:\\users\\konradl\\desktop\\projekty\\webapi\\todoapp.api\\todoapp.infrastracture\\repositories\\userrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8322AC13-81F9-42D6-BA03-DEEC7AB9EF65}|ToDoApp.Infrastracture\\ToDoApp.Infrastracture.csproj|solutionrelative:todoapp.infrastracture\\repositories\\userrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F6B8C46-554E-4AE4-9062-0E0EFC9F30F6}|ToDoApp.Domain\\ToDoApp.Domain.csproj|c:\\users\\konradl\\desktop\\projekty\\webapi\\todoapp.api\\todoapp.domain\\repositories\\iuserrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F6B8C46-554E-4AE4-9062-0E0EFC9F30F6}|ToDoApp.Domain\\ToDoApp.Domain.csproj|solutionrelative:todoapp.domain\\repositories\\iuserrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF5F7FDF-BB9E-43F3-ACEA-BE006618A39A}|ToDoApp.Application\\ToDoApp.Application.csproj|c:\\users\\konradl\\desktop\\projekty\\webapi\\todoapp.api\\todoapp.application\\users\\query\\getuserbyid\\getuserbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF5F7FDF-BB9E-43F3-ACEA-BE006618A39A}|ToDoApp.Application\\ToDoApp.Application.csproj|solutionrelative:todoapp.application\\users\\query\\getuserbyid\\getuserbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF5F7FDF-BB9E-43F3-ACEA-BE006618A39A}|ToDoApp.Application\\ToDoApp.Application.csproj|c:\\users\\konradl\\desktop\\projekty\\webapi\\todoapp.api\\todoapp.application\\users\\query\\getallusers\\getallusersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF5F7FDF-BB9E-43F3-ACEA-BE006618A39A}|ToDoApp.Application\\ToDoApp.Application.csproj|solutionrelative:todoapp.application\\users\\query\\getallusers\\getallusersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8322AC13-81F9-42D6-BA03-DEEC7AB9EF65}|ToDoApp.Infrastracture\\ToDoApp.Infrastracture.csproj|c:\\users\\konradl\\desktop\\projekty\\webapi\\todoapp.api\\todoapp.infrastracture\\extentions\\servicecollectionextention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8322AC13-81F9-42D6-BA03-DEEC7AB9EF65}|ToDoApp.Infrastracture\\ToDoApp.Infrastracture.csproj|solutionrelative:todoapp.infrastracture\\extentions\\servicecollectionextention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF5F7FDF-BB9E-43F3-ACEA-BE006618A39A}|ToDoApp.Application\\ToDoApp.Application.csproj|c:\\users\\konradl\\desktop\\projekty\\webapi\\todoapp.api\\todoapp.application\\extentions\\servicecollectionextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF5F7FDF-BB9E-43F3-ACEA-BE006618A39A}|ToDoApp.Application\\ToDoApp.Application.csproj|solutionrelative:todoapp.application\\extentions\\servicecollectionextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37E94ACB-3178-4544-A57E-C6C1D41D6314}|ToDoApp.Api\\ToDoApp.Api.csproj|c:\\users\\konradl\\desktop\\projekty\\webapi\\todoapp.api\\todoapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37E94ACB-3178-4544-A57E-C6C1D41D6314}|ToDoApp.Api\\ToDoApp.Api.csproj|solutionrelative:todoapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,106 +22,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ServiceCollectionExtention.cs",
-              "DocumentMoniker": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Infrastracture\\Extentions\\ServiceCollectionExtention.cs",
-              "RelativeDocumentMoniker": "ToDoApp.Infrastracture\\Extentions\\ServiceCollectionExtention.cs",
-              "ToolTip": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Infrastracture\\Extentions\\ServiceCollectionExtention.cs",
-              "RelativeToolTip": "ToDoApp.Infrastracture\\Extentions\\ServiceCollectionExtention.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T10:11:51.162Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ServiceCollectionExtentions.cs",
-              "DocumentMoniker": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Application\\Extentions\\ServiceCollectionExtentions.cs",
-              "RelativeDocumentMoniker": "ToDoApp.Application\\Extentions\\ServiceCollectionExtentions.cs",
-              "ToolTip": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Application\\Extentions\\ServiceCollectionExtentions.cs",
-              "RelativeToolTip": "ToDoApp.Application\\Extentions\\ServiceCollectionExtentions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T10:11:41.389Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserRepositories.cs",
-              "DocumentMoniker": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Infrastracture\\Repositories\\UserRepositories.cs",
-              "RelativeDocumentMoniker": "ToDoApp.Infrastracture\\Repositories\\UserRepositories.cs",
-              "ToolTip": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Infrastracture\\Repositories\\UserRepositories.cs",
-              "RelativeToolTip": "ToDoApp.Infrastracture\\Repositories\\UserRepositories.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAawA8AAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T09:57:46.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IUserRepositories.cs",
-              "DocumentMoniker": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Domain\\Repositories\\IUserRepositories.cs",
-              "RelativeDocumentMoniker": "ToDoApp.Domain\\Repositories\\IUserRepositories.cs",
-              "ToolTip": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Domain\\Repositories\\IUserRepositories.cs",
-              "RelativeToolTip": "ToDoApp.Domain\\Repositories\\IUserRepositories.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T09:57:07.985Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GetUserByIdQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Application\\Users\\Query\\GetUserById\\GetUserByIdQueryHandler.cs",
-              "RelativeDocumentMoniker": "ToDoApp.Application\\Users\\Query\\GetUserById\\GetUserByIdQueryHandler.cs",
-              "ToolTip": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Application\\Users\\Query\\GetUserById\\GetUserByIdQueryHandler.cs",
-              "RelativeToolTip": "ToDoApp.Application\\Users\\Query\\GetUserById\\GetUserByIdQueryHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T09:53:27.003Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GetUserByIdQuery.cs",
-              "DocumentMoniker": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Application\\Users\\Query\\GetUserById\\GetUserByIdQuery.cs",
-              "RelativeDocumentMoniker": "ToDoApp.Application\\Users\\Query\\GetUserById\\GetUserByIdQuery.cs",
-              "ToolTip": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Application\\Users\\Query\\GetUserById\\GetUserByIdQuery.cs",
-              "RelativeToolTip": "ToDoApp.Application\\Users\\Query\\GetUserById\\GetUserByIdQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T09:51:45.659Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GetAllUsersQuery.cs",
-              "DocumentMoniker": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Application\\Users\\Query\\GetAllUsers\\GetAllUsersQuery.cs",
-              "RelativeDocumentMoniker": "ToDoApp.Application\\Users\\Query\\GetAllUsers\\GetAllUsersQuery.cs",
-              "ToolTip": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Application\\Users\\Query\\GetAllUsers\\GetAllUsersQuery.cs",
-              "RelativeToolTip": "ToDoApp.Application\\Users\\Query\\GetAllUsers\\GetAllUsersQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T07:39:00.921Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserControler.cs",
-              "DocumentMoniker": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Api\\Controllers\\UserControler.cs",
-              "RelativeDocumentMoniker": "ToDoApp.Api\\Controllers\\UserControler.cs",
-              "ToolTip": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Api\\Controllers\\UserControler.cs",
-              "RelativeToolTip": "ToDoApp.Api\\Controllers\\UserControler.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAowBUAAAAZAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Api\\Program.cs",
+              "RelativeDocumentMoniker": "ToDoApp.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Api\\Program.cs",
+              "RelativeToolTip": "ToDoApp.Api\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T22:08:55.073Z",
+              "WhenOpened": "2024-10-17T12:58:02.626Z",
               "EditorCaption": ""
             }
           ]

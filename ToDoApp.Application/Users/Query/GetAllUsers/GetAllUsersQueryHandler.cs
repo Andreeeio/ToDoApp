@@ -18,7 +18,7 @@ public class GetAllUsersQueryHandler(ILogger<GetAllUsersQueryHandler> logger,
         logger.LogInformation("Get all users");
         var users = await _userRepositories.GetAllUsersAsync();
 
-        var usersDtos = mapper.Map<IEnumerable<UserDTO>>(users);
+        var usersDtos = _mapper.Map<IEnumerable<UserDTO>>(users);
         return usersDtos;
     }
 }

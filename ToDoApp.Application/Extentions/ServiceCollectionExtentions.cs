@@ -2,6 +2,10 @@
 using Microsoft.Extensions.Configuration;
 using ToDoApp.Application.Users;
 using ToDoApp.Application.Users.DTO;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+
+
 
 
 namespace ToDoApp.Application.Extentions;
@@ -14,6 +18,8 @@ public static class ServiceCollectionExtentions
 
         services.AddAutoMapper(typeof(ServiceCollectionExtentions).Assembly);
         services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(ServiceCollectionExtentions).Assembly));
+
+        services.AddValidatorsFromAssembly(typeof(ServiceCollectionExtentions).Assembly).AddFluentValidationAutoValidation();
 
     }
 
