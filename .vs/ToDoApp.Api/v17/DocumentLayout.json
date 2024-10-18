@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FF5F7FDF-BB9E-43F3-ACEA-BE006618A39A}|ToDoApp.Application\\ToDoApp.Application.csproj|c:\\users\\konradl\\desktop\\projekty\\webapi\\todoapp.api\\todoapp.application\\interfaces\\iusercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF5F7FDF-BB9E-43F3-ACEA-BE006618A39A}|ToDoApp.Application\\ToDoApp.Application.csproj|solutionrelative:todoapp.application\\interfaces\\iusercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF5F7FDF-BB9E-43F3-ACEA-BE006618A39A}|ToDoApp.Application\\ToDoApp.Application.csproj|c:\\users\\konradl\\desktop\\projekty\\webapi\\todoapp.api\\todoapp.application\\todoapp.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FF5F7FDF-BB9E-43F3-ACEA-BE006618A39A}|ToDoApp.Application\\ToDoApp.Application.csproj|solutionrelative:todoapp.application\\todoapp.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF5F7FDF-BB9E-43F3-ACEA-BE006618A39A}|ToDoApp.Application\\ToDoApp.Application.csproj|c:\\users\\konradl\\desktop\\projekty\\webapi\\todoapp.api\\todoapp.application\\services\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF5F7FDF-BB9E-43F3-ACEA-BE006618A39A}|ToDoApp.Application\\ToDoApp.Application.csproj|solutionrelative:todoapp.application\\services\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37E94ACB-3178-4544-A57E-C6C1D41D6314}|ToDoApp.Api\\ToDoApp.Api.csproj|c:\\users\\konradl\\desktop\\projekty\\webapi\\todoapp.api\\todoapp.api\\controllers\\usercontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37E94ACB-3178-4544-A57E-C6C1D41D6314}|ToDoApp.Api\\ToDoApp.Api.csproj|solutionrelative:todoapp.api\\controllers\\usercontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF5F7FDF-BB9E-43F3-ACEA-BE006618A39A}|ToDoApp.Application\\ToDoApp.Application.csproj|c:\\users\\konradl\\desktop\\projekty\\webapi\\todoapp.api\\todoapp.application\\users\\query\\getallusers\\getallusersqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF5F7FDF-BB9E-43F3-ACEA-BE006618A39A}|ToDoApp.Application\\ToDoApp.Application.csproj|solutionrelative:todoapp.application\\users\\query\\getallusers\\getallusersqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{37E94ACB-3178-4544-A57E-C6C1D41D6314}|ToDoApp.Api\\ToDoApp.Api.csproj|c:\\users\\konradl\\desktop\\projekty\\webapi\\todoapp.api\\todoapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37E94ACB-3178-4544-A57E-C6C1D41D6314}|ToDoApp.Api\\ToDoApp.Api.csproj|solutionrelative:todoapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,15 +34,79 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IUserContext.cs",
+              "DocumentMoniker": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Application\\Interfaces\\IUserContext.cs",
+              "RelativeDocumentMoniker": "ToDoApp.Application\\Interfaces\\IUserContext.cs",
+              "ToolTip": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Application\\Interfaces\\IUserContext.cs*",
+              "RelativeToolTip": "ToDoApp.Application\\Interfaces\\IUserContext.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:14:56.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ToDoApp.Application",
+              "DocumentMoniker": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Application\\ToDoApp.Application.csproj",
+              "RelativeDocumentMoniker": "ToDoApp.Application\\ToDoApp.Application.csproj",
+              "ToolTip": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Application\\ToDoApp.Application.csproj*",
+              "RelativeToolTip": "ToDoApp.Application\\ToDoApp.Application.csproj*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-18T10:14:00.05Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "UserContext.cs",
+              "DocumentMoniker": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Application\\Services\\UserContext.cs",
+              "RelativeDocumentMoniker": "ToDoApp.Application\\Services\\UserContext.cs",
+              "ToolTip": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Application\\Services\\UserContext.cs",
+              "RelativeToolTip": "ToDoApp.Application\\Services\\UserContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:14:30.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetAllUsersQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Application\\Users\\Query\\GetAllUsers\\GetAllUsersQueryHandler.cs",
+              "RelativeDocumentMoniker": "ToDoApp.Application\\Users\\Query\\GetAllUsers\\GetAllUsersQueryHandler.cs",
+              "ToolTip": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Application\\Users\\Query\\GetAllUsers\\GetAllUsersQueryHandler.cs",
+              "RelativeToolTip": "ToDoApp.Application\\Users\\Query\\GetAllUsers\\GetAllUsersQueryHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T13:45:10.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserControler.cs",
+              "DocumentMoniker": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Api\\Controllers\\UserControler.cs",
+              "RelativeDocumentMoniker": "ToDoApp.Api\\Controllers\\UserControler.cs",
+              "ToolTip": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Api\\Controllers\\UserControler.cs",
+              "RelativeToolTip": "ToDoApp.Api\\Controllers\\UserControler.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAYwDQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T13:44:58.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Api\\Program.cs",
               "RelativeDocumentMoniker": "ToDoApp.Api\\Program.cs",
@@ -30,8 +114,7 @@
               "RelativeToolTip": "ToDoApp.Api\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T12:58:02.626Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T12:58:02.626Z"
             }
           ]
         }
