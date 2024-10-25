@@ -12,8 +12,8 @@ using ToDoApp.Infrastracture.Presistance;
 namespace ToDoApp.Infrastracture.Migrations
 {
     [DbContext(typeof(ToDoAppDbContext))]
-    [Migration("20241016141345_mg3")]
-    partial class mg3
+    [Migration("20241023085506_datetime")]
+    partial class datetime
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -48,14 +48,14 @@ namespace ToDoApp.Infrastracture.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateOnly>("Created")
-                        .HasColumnType("date");
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateOnly>("Expired")
-                        .HasColumnType("date");
+                    b.Property<DateTime>("Expired")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
                         .IsRequired()

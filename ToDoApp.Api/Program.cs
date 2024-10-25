@@ -8,17 +8,39 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddControllers();
-builder.Services.AddScoped<ErrorHandlingMiddleware>();
-builder.Services.AddInfrastracture(builder.Configuration);
-builder.Services.AddAplication();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(config =>
+{
     config.MapType<DateOnly>(() => new OpenApiSchema
     {
         Type = "string",
         Format = "date"
-    })
+    });
+    config.MapType<DateTime>(() => new OpenApiSchema
+    {
+        Type = "string",
+        Format = "date-time"
+    });
+    config.AddSecurityDefinition("bearerAuth", new OpenApiSecurityScheme
+    {
+        Type = SecuritySchemeType.Http,
+        Scheme = "Bearer"
+    });
+    config.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference{ Type = ReferenceType.SecurityScheme, Id = "bearerAuth"}
+            },
+            []
+        }
+    });
+    }
 );
+builder.Services.AddScoped<ErrorHandlingMiddleware>();
+builder.Services.AddInfrastracture(builder.Configuration);
+builder.Services.AddAplication(builder.Configuration);
 
 var app = builder.Build();
 var scope = app.Services.CreateScope();
@@ -36,6 +58,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

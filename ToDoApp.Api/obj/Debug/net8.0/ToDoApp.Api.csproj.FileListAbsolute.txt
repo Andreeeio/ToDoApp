@@ -302,3 +302,4 @@ C:\Users\Konradl\Desktop\projekty\WebApi\ToDoApp.Api\ToDoApp.Api\bin\Debug\net8.
 C:\Users\Konradl\Desktop\projekty\WebApi\ToDoApp.Api\ToDoApp.Api\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\Konradl\Desktop\projekty\WebApi\ToDoApp.Api\ToDoApp.Api\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 C:\Users\Konradl\Desktop\projekty\WebApi\ToDoApp.Api\ToDoApp.Api\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Konradl\Desktop\projekty\WebApi\ToDoApp.Api\ToDoApp.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

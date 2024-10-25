@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ToDoApp.Application.Users.DTO;
 
-namespace ToDoApp.Application.Interfaces
+namespace ToDoApp.Application.Interfaces;
+
+public interface IUserContext
 {
-    internal interface IUserContext
-    {
-    }
+    CurrentUser? GetCurrentUser();
 }

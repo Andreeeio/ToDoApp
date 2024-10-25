@@ -1,4 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
+using System.Security.Cryptography;
+using System.Text;
 using ToDoApp.Domain.Constants;
 using ToDoApp.Domain.Entities;
 using ToDoApp.Domain.Repositories;
@@ -21,11 +24,13 @@ public class UserRepositories(ToDoAppDbContext dbContext) : IUserRepositories
         return user;
     }
 
-    public async Task<User?> GetUserByEmail(string email)
+    public async Task<User?> GetUserByEmail(string email, params Expression<Func<User, object>>[] includePredicates)
     {
-        var user = await dbContext.Users.FirstOrDefaultAsync(x => x.Email == email);
-        return user;
+        var query = ApplyIncludes(includePredicates);
+        return await query.FirstOrDefaultAsync(x => x.Email == email);
     }
+
+
 
     public async Task<int> CreateUser(User user)
     {
@@ -44,9 +49,16 @@ public class UserRepositories(ToDoAppDbContext dbContext) : IUserRepositories
         }
         return false;
     }
-
     public async Task SaveChanges() 
         => await dbContext.SaveChangesAsync();
 
-
+    private IQueryable<User> ApplyIncludes(params Expression<Func<User, object>>[] includePredicates) 
+    {
+        var query = dbContext.Users.AsQueryable();
+        foreach (var includePredicate in includePredicates)
+        { 
+            query = query.Include(includePredicate);
+        }
+        return query;
+    }
 }

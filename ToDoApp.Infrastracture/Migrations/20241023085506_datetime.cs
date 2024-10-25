@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ToDoApp.Infrastracture.Migrations
 {
     /// <inheritdoc />
-    public partial class mg1 : Migration
+    public partial class datetime : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -35,6 +35,8 @@ namespace ToDoApp.Infrastracture.Migrations
                     Email = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Phone = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     DateOfBirth = table.Column<DateOnly>(type: "date", nullable: false),
+                    ConfirmationTokenExpiration = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    ConfirmationToken = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IsEmailConfirmed = table.Column<bool>(type: "bit", nullable: false),
                     PasswordHash = table.Column<byte[]>(type: "varbinary(max)", nullable: false),
                     PasswordSalt = table.Column<byte[]>(type: "varbinary(max)", nullable: false)
@@ -53,8 +55,8 @@ namespace ToDoApp.Infrastracture.Migrations
                     User_Id = table.Column<int>(type: "int", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Created = table.Column<DateOnly>(type: "date", nullable: false),
-                    Expired = table.Column<DateOnly>(type: "date", nullable: false)
+                    Created = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Expired = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {

@@ -82,8 +82,17 @@ public class ToDoAppSeeder(ToDoAppDbContext dbContext) : IToDoAppSeeder
         var assignments = new Faker<Assignment>(Locale)
             .RuleFor(x => x.Name, y => y.Lorem.Word())
             .RuleFor(x => x.Description, y => y.Lorem.ToString())
-            .RuleFor(x => x.Created, y => y.Date.RecentDateOnly())
-            .RuleFor(x => x.Expired, y => y.Date.SoonDateOnly())
+            .RuleFor(x => x.Completed, y => y.Random.Bool())
+            .RuleFor(x => x.Created, y => 
+            {
+                var created = y.Date.Recent();
+                return new DateTime(created.Year, created.Month, created.Day, created.Hour, created.Minute, 0);
+        })
+            .RuleFor(x => x.Expired, y =>
+            {
+                var expired = y.Date.Recent();
+                return new DateTime(expired.Year, expired.Month, expired.Day, expired.Hour, expired.Minute, 0);
+            })
             .Generate(count);
 
         return assignments;

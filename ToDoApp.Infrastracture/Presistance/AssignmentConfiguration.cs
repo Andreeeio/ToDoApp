@@ -18,5 +18,6 @@ public class AssignmentConfiguration : IEntityTypeConfiguration<Assignment>
             .HasForeignKey(i => i.User_Id)
             .OnDelete(DeleteBehavior.Cascade);
 
+        
     }
 }

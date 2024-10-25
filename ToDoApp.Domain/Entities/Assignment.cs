@@ -6,8 +6,9 @@ public class Assignment
     public int User_Id { get; set; }
     public string Name { get; set; } = default!;
     public string? Description { get; set; } = default!;
-    public DateOnly Created { get; set; }
-    public DateOnly Expired { get; set; }
+    public bool Completed { get; set; }
+    public DateTime Created { get; set; }
+    public DateTime Expired { get; set; }
     public User User { get; set; } = default!;
 
 }

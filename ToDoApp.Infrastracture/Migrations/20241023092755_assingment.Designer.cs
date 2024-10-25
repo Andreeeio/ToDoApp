@@ -12,8 +12,8 @@ using ToDoApp.Infrastracture.Presistance;
 namespace ToDoApp.Infrastracture.Migrations
 {
     [DbContext(typeof(ToDoAppDbContext))]
-    [Migration("20241012163814_mg1")]
-    partial class mg1
+    [Migration("20241023092755_assingment")]
+    partial class assingment
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -48,14 +48,17 @@ namespace ToDoApp.Infrastracture.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateOnly>("Created")
-                        .HasColumnType("date");
+                    b.Property<bool>("Completed")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateOnly>("Expired")
-                        .HasColumnType("date");
+                    b.Property<DateTime>("Expired")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -95,6 +98,12 @@ namespace ToDoApp.Infrastracture.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ConfirmationToken")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("ConfirmationTokenExpiration")
+                        .HasColumnType("datetime2");
 
                     b.Property<DateOnly>("DateOfBirth")
                         .HasColumnType("date");

@@ -17,10 +17,20 @@ public class ErrorHandlingMiddleware(ILogger<ErrorHandlingMiddleware> logger) : 
             context.Response.StatusCode = StatusCodes.Status400BadRequest;
             await context.Response.WriteAsync(e.Message);
         }
-        catch(NotFoundException e) 
+        catch (UnauthorizedExeption e)
+        {
+            context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+            await context.Response.WriteAsync(e.Message);
+        }
+        catch (NotFoundException e) 
         {
             context.Response.StatusCode = StatusCodes.Status404NotFound;
             await context.Response.WriteAsync(e.Message);
+        }
+         catch(Exception e)
+        {
+            context.Response.StatusCode = 500;
+            Console.WriteLine(e);
         }
         catch 
         {
