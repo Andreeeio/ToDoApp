@@ -11,11 +11,11 @@ namespace ToDoApp.Application.Users.Command.GeneratingNewToken;
 
 public class GeneratingNewTokenCommandHandler(ILogger<GeneratingNewTokenCommand> logger,
     IUserContext userContext,
-    IUserAuthorizeServie userAuthorizeServie,
+    IUserAuthorizationServie userAuthorizeServie,
     IUserRepositories userRepositories) : IRequestHandler<GeneratingNewTokenCommand>
 {
     private readonly IUserContext _userContext = userContext;
-    private readonly IUserAuthorizeServie _userAuthorizeServie = userAuthorizeServie;
+    private readonly IUserAuthorizationServie _userAuthorizeServie = userAuthorizeServie;
     private readonly IUserRepositories _userRepositories = userRepositories;
     public async Task Handle(GeneratingNewTokenCommand request, CancellationToken cancellationToken)
     {

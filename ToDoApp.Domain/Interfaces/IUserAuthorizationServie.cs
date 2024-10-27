@@ -2,7 +2,7 @@
 
 namespace ToDoApp.Domain.Interfaces;
 
-public interface IUserAuthorizeServie
+public interface IUserAuthorizationServie
 {
     bool Authorize(ResourceOperation operation);
 }

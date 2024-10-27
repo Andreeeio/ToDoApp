@@ -13,20 +13,21 @@ public class AddAssignmentCommandHandler(ILogger<AddAssignmentCommandHandler> lo
     IMapper mapper,
     IAssignmentRepository assignmentRepository,
     IUserContext userContext,
-    IAssignmentAuthorization assignmentAuthorization) : IRequestHandler<AddAssignmentCommand>
+    IAssignmentAuthorizationService assignmentAuthorizationService) : IRequestHandler<AddAssignmentCommand>
 {
     private readonly IAssignmentRepository _assignmentRepository = assignmentRepository;
     private readonly IMapper _mapper = mapper;
     private readonly IUserContext _userContext = userContext;
-    private readonly IAssignmentAuthorization _assignmentAuthorization = assignmentAuthorization;
+    private readonly IAssignmentAuthorizationService _assignmentAuthorizationService = assignmentAuthorizationService;
     public async Task Handle(AddAssignmentCommand request, CancellationToken cancellationToken)
     {
         logger.LogInformation("Adding an assignment");
         var user = _userContext.GetCurrentUser();
-        if (!_assignmentAuthorization.Authorize(ResourceOperation.Create))
+        var assignment = _mapper.Map<Assignment>(request);
+        if (!_assignmentAuthorizationService.Authorize(ResourceOperation.Create, assignment))
             throw new UnauthorizedAccessException("Not authorized user");
 
-        var assignment = _mapper.Map<Assignment>(request);
+        assignment.Created = DateTime.UtcNow;
         assignment.User_Id = user.Id;
         assignment.Completed = false;
 

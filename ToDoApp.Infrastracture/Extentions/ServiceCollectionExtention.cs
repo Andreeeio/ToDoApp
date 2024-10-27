@@ -20,7 +20,7 @@ public static class ServiceCollectionExtention
         services.AddScoped<IToDoAppSeeder, ToDoAppSeeder>();
         services.AddScoped<IUserRepositories,UserRepositories>();
         services.AddScoped<IAssignmentRepository,AssignmentRepository>();
-        services.AddScoped<IAssignmentAuthorization,AssignmentAuthorization>();
-        services.AddScoped<IUserAuthorizeServie,UserAuthorizeServie>();
+        services.AddScoped<IAssignmentAuthorizationService, AssignmentAuthorizationService>();
+        services.AddScoped<IUserAuthorizationServie, UserAuthorizationServie>();
     }
 }

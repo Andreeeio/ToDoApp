@@ -15,16 +15,19 @@ public class ErrorHandlingMiddleware(ILogger<ErrorHandlingMiddleware> logger) : 
         catch(InvalidOperationException e) 
         {
             context.Response.StatusCode = StatusCodes.Status400BadRequest;
+            Console.WriteLine(e);
             await context.Response.WriteAsync(e.Message);
         }
         catch (UnauthorizedExeption e)
         {
             context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+            Console.WriteLine(e);
             await context.Response.WriteAsync(e.Message);
         }
         catch (NotFoundException e) 
         {
             context.Response.StatusCode = StatusCodes.Status404NotFound;
+            Console.WriteLine(e);
             await context.Response.WriteAsync(e.Message);
         }
          catch(Exception e)

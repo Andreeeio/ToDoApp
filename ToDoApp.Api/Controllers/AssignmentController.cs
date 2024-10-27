@@ -2,8 +2,11 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ToDoApp.Application.Assignments.Command.AddAssignment;
+using ToDoApp.Application.Assignments.Command.CompletAssignment;
+using ToDoApp.Application.Assignments.Command.DeleteAssignment;
 using ToDoApp.Application.Assignments.DTO;
 using ToDoApp.Application.Assignments.Query.GetAllAssignment;
+using ToDoApp.Application.Assignments.Query.GetUserAssignments;
 
 namespace ToDoApp.Api.Controllers;
 
@@ -21,6 +24,14 @@ public class AssignmentController(IMediator mediator) : ControllerBase
         var assignment = await _mediator.Send(new GetAllAssignmentsQuery());
         return Ok(assignment);
     }
+
+    [HttpGet("yourtasks")]
+    public async Task<ActionResult<IEnumerable<AssignmentDTO>>> GetUserAssignment()
+    {
+        var assignments = await _mediator.Send(new GetUserAssignmentsQuery());
+        return Ok(assignments);
+    }
+
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -29,5 +40,22 @@ public class AssignmentController(IMediator mediator) : ControllerBase
     {
         await _mediator.Send(command);
         return NoContent();
+    }
+
+    [HttpDelete("{id}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<ActionResult> DelateAssignment([FromRoute]int id)
+    {
+        await _mediator.Send(new DelateAssignmentCommand(id));
+        return NoContent();
+    }
+
+    [HttpPost("{id}")]
+    public async Task<ActionResult> CompletedAssignment([FromRoute]int id)
+    {
+        await _mediator.Send(new CompletAssignmentCommand(id));
+        return Ok();
     }
 }

@@ -5,7 +5,7 @@ using ToDoApp.Domain.Interfaces;
 
 namespace ToDoApp.Infrastracture.Authorization;
 
-public class UserAuthorizeServie(IUserContext userContext) : IUserAuthorizeServie
+public class UserAuthorizationServie(IUserContext userContext) : IUserAuthorizationServie
 {
     private readonly IUserContext _userContext = userContext;
 
