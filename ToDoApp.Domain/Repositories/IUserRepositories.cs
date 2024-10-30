@@ -10,6 +10,7 @@ public interface IUserRepositories
     Task<User?> GetUserById(int id);
     Task<int> CreateUser(User user);
     Task<bool> IfUserExist(string email, string phone);
+    Task DeleteUser(User user);
     Task SaveChanges();
 
 }

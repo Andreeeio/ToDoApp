@@ -49,6 +49,14 @@ public class UserRepositories(ToDoAppDbContext dbContext) : IUserRepositories
         }
         return false;
     }
+
+    public async Task DeleteUser(User user)
+    {
+        dbContext.Users.Remove(user);
+        await dbContext.SaveChangesAsync();
+    }
+
+
     public async Task SaveChanges() 
         => await dbContext.SaveChangesAsync();
 

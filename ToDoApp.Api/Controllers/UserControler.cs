@@ -1,8 +1,13 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.SqlServer.Query.Internal;
 using ToDoApp.Application.Users;
 using ToDoApp.Application.Users.Command.AddUserCommand;
+using ToDoApp.Application.Users.Command.ChangePassword;
+using ToDoApp.Application.Users.Command.ChangePasswordWithToken;
 using ToDoApp.Application.Users.Command.ConfirEmail;
+using ToDoApp.Application.Users.Command.DeleteUser;
+using ToDoApp.Application.Users.Command.GenerateResetToken;
 using ToDoApp.Application.Users.Command.GeneratingNewToken;
 using ToDoApp.Application.Users.DTO;
 using ToDoApp.Application.Users.Query.GetAllUsers;
@@ -62,10 +67,56 @@ public class UserControler(IMediator mediator) : ControllerBase
         return Ok(token);
     }
 
-    [HttpPatch]
+    [HttpPatch("confirmationtoken")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult> GetNewToken()
     {
         await _mediator.Send(new GeneratingNewTokenCommand());
+        return Ok();
+    }
+
+    [HttpPatch("resettoken")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<ActionResult> GetNewResetToken(GenerateResetTokenCommand command)
+    {
+        await _mediator.Send(command);
+        return Ok();
+    }
+
+    [HttpDelete]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<ActionResult> DeleteUser()
+    {
+        await _mediator.Send(new DeleteUserCommand());
+        return NoContent();
+    }
+
+    [HttpPost]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<ActionResult> ChangePassword(ChangePasswordCommand command)
+    {
+        await _mediator.Send(command);
+        return Ok();
+    }
+
+    [HttpPost("token")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<ActionResult> ChangePasswordWithToken(ChangePasswordWithTokenCommand command)
+    {
+        await _mediator.Send(command);
         return Ok();
     }
 }

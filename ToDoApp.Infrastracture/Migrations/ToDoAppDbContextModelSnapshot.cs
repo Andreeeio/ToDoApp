@@ -131,6 +131,12 @@ namespace ToDoApp.Infrastracture.Migrations
                     b.Property<string>("Phone")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("ResetToken")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("ResetTokenExpiration")
+                        .HasColumnType("datetime2");
+
                     b.HasKey("Id");
 
                     b.HasIndex("Email")

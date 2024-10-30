@@ -10,6 +10,8 @@ public class User
     public DateOnly DateOfBirth { get; set; }
     public DateTime? ConfirmationTokenExpiration {  get; set; }
     public string? ConfirmationToken { get; set; } = default!;
+    public DateTime? ResetTokenExpiration { get; set; }
+    public string? ResetToken { get; set; } = default!;
     public bool IsEmailConfirmed { get; set; }
     public byte[] PasswordHash { get; set; } = default!;
     public byte[] PasswordSalt { get; set; } = default!;
