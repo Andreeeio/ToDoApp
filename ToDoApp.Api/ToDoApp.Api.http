@@ -1,6 +1,21 @@
 @ToDoApp.Api_HostAddress = http://localhost:5058
 
-GET {{ToDoApp.Api_HostAddress}}/weatherforecast/
+GET {{ToDoApp.Api_HostAddress}}/users/231
+Accept: application/json
+
+###
+
+GET http://localhost:5058/users/231
+Accept: application/json
+
+###
+
+POST http://localhost:5058/users/login
+Content-Type: application/json
+{
+    "login": "Emil_Jurkowski@hotmail.com",
+    "password": "Password#123"
+}
 Accept: application/json
 
 ###
