@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ToDoApp.Infrastracture")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+824f824c707bcd4421bc469b13145dab1b715650")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eafc5d70d972d813b64d528b99c9e31d2cdc6eee")]
 [assembly: System.Reflection.AssemblyProductAttribute("ToDoApp.Infrastracture")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ToDoApp.Infrastracture")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
