@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{37E94ACB-3178-4544-A57E-C6C1D41D6314}|ToDoApp.Api\\ToDoApp.Api.csproj|c:\\users\\konradl\\desktop\\projekty\\webapi\\todoapp.api\\todoapp.api\\controllers\\usercontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37E94ACB-3178-4544-A57E-C6C1D41D6314}|ToDoApp.Api\\ToDoApp.Api.csproj|solutionrelative:todoapp.api\\controllers\\usercontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37E94ACB-3178-4544-A57E-C6C1D41D6314}|ToDoApp.Api\\ToDoApp.Api.csproj|c:\\users\\konradl\\desktop\\projekty\\webapi\\todoapp.api\\todoapp.api\\controllers\\assignmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37E94ACB-3178-4544-A57E-C6C1D41D6314}|ToDoApp.Api\\ToDoApp.Api.csproj|solutionrelative:todoapp.api\\controllers\\assignmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37E94ACB-3178-4544-A57E-C6C1D41D6314}|ToDoApp.Api\\ToDoApp.Api.csproj|c:\\users\\konradl\\desktop\\projekty\\webapi\\todoapp.api\\todoapp.api\\middlewares\\errorhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37E94ACB-3178-4544-A57E-C6C1D41D6314}|ToDoApp.Api\\ToDoApp.Api.csproj|solutionrelative:todoapp.api\\middlewares\\errorhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,50 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AssignmentController.cs",
-              "DocumentMoniker": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Api\\Controllers\\AssignmentController.cs",
-              "RelativeDocumentMoniker": "ToDoApp.Api\\Controllers\\AssignmentController.cs",
-              "ToolTip": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Api\\Controllers\\AssignmentController.cs",
-              "RelativeToolTip": "ToDoApp.Api\\Controllers\\AssignmentController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwB8AAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T14:05:52.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserControler.cs",
-              "DocumentMoniker": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Api\\Controllers\\UserControler.cs",
-              "RelativeDocumentMoniker": "ToDoApp.Api\\Controllers\\UserControler.cs",
-              "ToolTip": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Api\\Controllers\\UserControler.cs",
-              "RelativeToolTip": "ToDoApp.Api\\Controllers\\UserControler.cs",
-              "ViewState": "AQIAAF8AAAAAAAAAAAA7wHEAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T14:01:40.754Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ErrorHandlingMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Api\\Middlewares\\ErrorHandlingMiddleware.cs",
-              "RelativeDocumentMoniker": "ToDoApp.Api\\Middlewares\\ErrorHandlingMiddleware.cs",
-              "ToolTip": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\ToDoApp.Api\\Middlewares\\ErrorHandlingMiddleware.cs",
-              "RelativeToolTip": "ToDoApp.Api\\Middlewares\\ErrorHandlingMiddleware.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T13:54:54.484Z",
-              "EditorCaption": ""
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             }
           ]
         }
