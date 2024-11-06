@@ -10,5 +10,9 @@ public class AddAssignmentCommandValidator : AbstractValidator<AddAssignmentComm
             .NotEmpty()
             .MinimumLength(3);
 
+        RuleFor(x => x.Expired)
+            .NotEmpty()
+            .GreaterThan(DateTime.UtcNow);
+
     }
 }

@@ -22,6 +22,7 @@ namespace ToDoApp.Api.Controllers;
 public class UserControler(IMediator mediator) : ControllerBase
 {
     private readonly IMediator _mediator = mediator;
+    
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<ActionResult> GetAll()

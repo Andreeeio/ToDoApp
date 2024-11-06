@@ -52,7 +52,7 @@ public class AssignmentController(IMediator mediator) : ControllerBase
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult> DelateAssignment([FromRoute]int id)
     {
-        await _mediator.Send(new DelateAssignmentCommand(id));
+        await _mediator.Send(new DeleteAssignmentCommand(id));
         return NoContent();
     }
 
@@ -73,7 +73,7 @@ public class AssignmentController(IMediator mediator) : ControllerBase
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult> UpdateAssignment([FromRoute] int id, UpdateAssignmentCommand command)
     {
-        command.id = id;
+        command.Id = id;
         await _mediator.Send(command);
         return Ok();
     }

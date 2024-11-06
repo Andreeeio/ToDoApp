@@ -39,12 +39,9 @@ public class ToDoAppSeeder(ToDoAppDbContext dbContext) : IToDoAppSeeder
                     _dbContext.Assignments.AddRange(assignment);
                 }
                 
-
                 _dbContext.Users.AddRange(users);
 
                 await _dbContext.SaveChangesAsync();
-
-
             }
         }
     }

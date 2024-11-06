@@ -28,5 +28,4 @@ public class UserContext(IHttpContextAccessor httpContext) : IUserContext
 
         return new CurrentUser(int.Parse(id), email, bool.Parse(confirmed), roles);
     }
-
 }

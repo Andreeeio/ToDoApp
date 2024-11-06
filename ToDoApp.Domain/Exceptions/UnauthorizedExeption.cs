@@ -2,5 +2,4 @@
 
 public class UnauthorizedExeption(string message) : Exception(message)
 {
-
 }

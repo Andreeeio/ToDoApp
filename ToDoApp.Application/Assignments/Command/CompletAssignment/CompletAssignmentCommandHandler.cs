@@ -19,6 +19,7 @@ public class CompletAssignmentCommandHandler(ILogger<AddAssignmentCommandHandler
     private readonly IAssignmentRepository _assignmentRepository = assignmentRepository;
     private readonly IUserContext _userContext = userContext;
     private readonly IAssignmentAuthorizationService _assignmentAuthorizationService = assignmentAuthorizationService;
+
     public async Task Handle(CompletAssignmentCommand request, CancellationToken cancellationToken)
     {
         logger.LogInformation("Completing an assignment");

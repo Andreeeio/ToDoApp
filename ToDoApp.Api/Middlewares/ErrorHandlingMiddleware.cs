@@ -6,6 +6,7 @@ namespace ToDoApp.Api.Middlewares;
 public class ErrorHandlingMiddleware(ILogger<ErrorHandlingMiddleware> logger) : IMiddleware
 {
     private readonly ILogger<ErrorHandlingMiddleware> _logger = logger; 
+
     public async Task InvokeAsync(HttpContext context, RequestDelegate next)
     {
         try

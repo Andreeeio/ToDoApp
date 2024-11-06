@@ -12,5 +12,4 @@ public interface IUserRepositories
     Task<bool> IfUserExist(string email, string phone);
     Task DeleteUser(User user);
     Task SaveChanges();
-
 }

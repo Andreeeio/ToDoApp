@@ -8,7 +8,6 @@ using ToDoApp.Domain.Interfaces;
 using ToDoApp.Domain.Repositories;
 
 namespace ToDoApp.Application.Assignments.Command.AddAssignment;
-
 public class AddAssignmentCommandHandler(ILogger<AddAssignmentCommandHandler> logger,
     IMapper mapper,
     IAssignmentRepository assignmentRepository,
@@ -19,6 +18,7 @@ public class AddAssignmentCommandHandler(ILogger<AddAssignmentCommandHandler> lo
     private readonly IMapper _mapper = mapper;
     private readonly IUserContext _userContext = userContext;
     private readonly IAssignmentAuthorizationService _assignmentAuthorizationService = assignmentAuthorizationService;
+
     public async Task Handle(AddAssignmentCommand request, CancellationToken cancellationToken)
     {
         logger.LogInformation("Adding an assignment");
@@ -28,7 +28,7 @@ public class AddAssignmentCommandHandler(ILogger<AddAssignmentCommandHandler> lo
             throw new UnauthorizedAccessException("Not authorized user");
 
         assignment.Created = DateTime.UtcNow;
-        assignment.User_Id = user.Id;
+        assignment.UserId = user.id;
         assignment.Completed = false;
 
         await _assignmentRepository.AddAssignment(assignment);

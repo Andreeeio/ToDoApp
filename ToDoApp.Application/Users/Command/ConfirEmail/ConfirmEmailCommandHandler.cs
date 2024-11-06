@@ -10,6 +10,7 @@ public class ConfirmEmailCommandHandler(ILogger<ConfirmEmailCommandHandler> logg
     IUserRepositories userRepositories) : IRequestHandler<ConfirmEmailCommand>
 {
     private IUserRepositories _userRepositories = userRepositories;
+
     public async Task Handle(ConfirmEmailCommand request, CancellationToken cancellationToken)
     {
         logger.LogInformation("Confirming user's email");
@@ -20,6 +21,7 @@ public class ConfirmEmailCommandHandler(ILogger<ConfirmEmailCommandHandler> logg
         {
             throw new InvalidOperationException("Dont have confirmation token") ;
         }
+
         if(user.ConfirmationTokenExpiration < DateTime.UtcNow)
         {
             user.ConfirmationToken = null;

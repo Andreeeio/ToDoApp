@@ -10,7 +10,7 @@ using ToDoApp.Domain.Repositories;
 
 namespace ToDoApp.Application.Assignments.Command.UpdateAssignment;
 
-public class UpdateAssignmentCommandHandler(ILogger<DelateAssignmentCommandHandler> logger,
+public class UpdateAssignmentCommandHandler(ILogger<UpdateAssignmentCommandHandler> logger,
     IUserContext userContext,
     IAssignmentAuthorizationService assignmentAuthorizationService,
     IAssignmentRepository assignmentRepository) : IRequestHandler<UpdateAssignmentCommand>
@@ -21,8 +21,8 @@ public class UpdateAssignmentCommandHandler(ILogger<DelateAssignmentCommandHandl
     public async Task Handle(UpdateAssignmentCommand request, CancellationToken cancellationToken)
     {
         logger.LogInformation("Updateing an assignment");
-        var assignment = await _assignmentRepository.GetAssignmentAsync(request.id)
-            ?? throw new NotFoundException(nameof(Assignment),request.id.ToString());
+        var assignment = await _assignmentRepository.GetAssignmentAsync(request.Id)
+            ?? throw new NotFoundException(nameof(Assignment),request.Id.ToString());
 
         var currentUser = _userContext.GetCurrentUser()
             ?? throw new UnauthorizedExeption("Unauthorized user");
@@ -31,25 +31,25 @@ public class UpdateAssignmentCommandHandler(ILogger<DelateAssignmentCommandHandl
             throw new UnauthorizedExeption("Unauthorized user");
 
         int i = 0;
-        if(request.name !=  null)
+        if(request.Name !=  null)
         {
             i++;
-            assignment.Name = request.name;
+            assignment.Name = request.Name;
         }
-        if (request.description != null)
+        if (request.Description != null)
         {
             i++;
-            assignment.Description = request.description;
+            assignment.Description = request.Description;
         }
-        if (request.completed != null)
+        if (request.Completed != null)
         {
             i++;
-            request.completed = assignment.Completed;
+            request.Completed = assignment.Completed;
         }
-        if (request.expired != null)
+        if (request.Expired != null)
         { 
             i++;
-            request.expired = assignment.Expired;
+            request.Expired = assignment.Expired;
         }
         if (i == 0)
             throw new InvalidOperationException();

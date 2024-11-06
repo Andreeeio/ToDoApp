@@ -2,11 +2,11 @@
 
 namespace ToDoApp.Application.Assignments.Command.UpdateAssignment;
 
-public class UpdateAssignmentCommand(int Id) : IRequest
+public class UpdateAssignmentCommand(int id) : IRequest
 {
-    public int id { get; set; } = Id;
-    public string? name { get; set; } = string.Empty;
-    public string? description { get; set; } = string.Empty ;
-    public bool? completed { get; set; } = null;
-    public DateTime? expired { get; set; } = null ;
+    public int Id { get; set; } = id;
+    public string? Name { get; set; } = string.Empty;
+    public string? Description { get; set; } = string.Empty ;
+    public bool? Completed { get; set; } = null;
+    public DateTime? Expired { get; set; } = null ;
 }

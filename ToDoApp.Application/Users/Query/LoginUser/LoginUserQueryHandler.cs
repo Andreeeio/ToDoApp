@@ -18,15 +18,16 @@ public class LoginUserQueryHandler(ILogger<LoginUserQueryHandler> logger,
 {
     private readonly IUserRepositories _userRepositories = userRepositories;
     private readonly ITokenService _tokenService = tokenService;
+
     public async Task<JwtToken> Handle(LoginUserQuery request, CancellationToken cancellationToken)
     {
         logger.LogInformation("User tring to log in");
 
-        var user = await _userRepositories.GetUserByEmail(request.login, u => u.Roles)
-            ?? throw new NotFoundException(nameof(User), request.login);
+        var user = await _userRepositories.GetUserByEmail(request.Login, u => u.Roles)
+            ?? throw new NotFoundException(nameof(User), request.Login);
 
         using var hmac =  new HMACSHA512(user.PasswordSalt);
-        var computeHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(request.password));
+        var computeHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(request.Password));
 
         if (!computeHash.SequenceEqual(user.PasswordHash))
         {

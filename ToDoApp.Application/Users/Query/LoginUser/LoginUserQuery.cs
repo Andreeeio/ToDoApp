@@ -3,8 +3,8 @@ using ToDoApp.Application.Users.DTO;
 
 namespace ToDoApp.Application.Users.Query.LoginUser;
 
-public class LoginUserQuery(string Login, string Password) : IRequest<JwtToken>
+public class LoginUserQuery(string login, string password) : IRequest<JwtToken>
 {
-    public string login { get; set; } = Login;  
-    public string password { get; set; } = Password;    
+    public string Login { get; set; } = login;  
+    public string Password { get; set; } = password;    
 }

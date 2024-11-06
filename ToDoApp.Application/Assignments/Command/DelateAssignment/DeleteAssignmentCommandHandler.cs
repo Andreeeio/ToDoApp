@@ -10,16 +10,18 @@ using ToDoApp.Domain.Repositories;
 
 namespace ToDoApp.Application.Assignments.Command.DeleteAssignment;
 
-public class DelateAssignmentCommandHandler(ILogger<DelateAssignmentCommandHandler> logger,
+public class DeleteAssignmentCommandHandler(ILogger<DeleteAssignmentCommandHandler> logger,
     IUserContext userContext,
     IAssignmentAuthorizationService assignmentAuthorizationService,
-    IAssignmentRepository assignmentRepository) : IRequestHandler<DelateAssignmentCommand>
+    IAssignmentRepository assignmentRepository) : IRequestHandler<DeleteAssignmentCommand>
 {
     private readonly IAssignmentRepository _assignmentRepository = assignmentRepository;
     private readonly IUserContext _userContext = userContext;
     private readonly IAssignmentAuthorizationService _assignmentAuthorizationService = assignmentAuthorizationService;
-    public async Task Handle(DelateAssignmentCommand request, CancellationToken cancellationToken)
+
+    public async Task Handle(DeleteAssignmentCommand request, CancellationToken cancellationToken)
     {
+        logger.LogInformation($"Deleting and assignment with id: {request.Id}");
         var assignment = await _assignmentRepository.GetAssignmentAsync(request.Id);
 
         if (assignment == null) 
@@ -28,6 +30,6 @@ public class DelateAssignmentCommandHandler(ILogger<DelateAssignmentCommandHandl
         if (!_assignmentAuthorizationService.Authorize(ResourceOperation.Delete, assignment))
             throw new UnauthorizedExeption($"Current user dont have an assignment with id {request.Id}");
 
-        await _assignmentRepository.DelateAssignmentAsync(assignment);
+        await _assignmentRepository.DeleteAssignmentAsync(assignment);
     }
 }

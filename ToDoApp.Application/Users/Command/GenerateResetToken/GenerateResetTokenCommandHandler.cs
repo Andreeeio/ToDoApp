@@ -13,6 +13,7 @@ public class GenerateResetTokenCommandHandler(ILogger<GenerateResetTokenCommandH
     IUserRepositories userRepositories) : IRequestHandler<GenerateResetTokenCommand>
 {
     private readonly IUserRepositories _userRepositories = userRepositories;
+
     public async Task Handle(GenerateResetTokenCommand request, CancellationToken cancellationToken)
     {
         logger.LogInformation("Creating reset token for user");
@@ -24,6 +25,5 @@ public class GenerateResetTokenCommandHandler(ILogger<GenerateResetTokenCommandH
         user.ResetToken = Guid.NewGuid().ToString();
 
         await _userRepositories.SaveChanges();
-
     }
 }

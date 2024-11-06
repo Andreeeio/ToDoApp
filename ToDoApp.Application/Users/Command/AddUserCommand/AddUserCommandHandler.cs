@@ -14,6 +14,7 @@ public class AddUserCommandHandler(ILogger<AddUserCommandHandler> logger,
 {
     private readonly IUserRepositories _userRepositories = userRepositories;
     private readonly IMapper _mapper = mapper;
+
     public async Task<int> Handle(AddUserCommand request, CancellationToken cancellationToken)
     {
         if(await _userRepositories.IfUserExist(request.Email, request.Phone))
@@ -33,6 +34,5 @@ public class AddUserCommandHandler(ILogger<AddUserCommandHandler> logger,
         user.ConfirmationToken = Guid.NewGuid().ToString();
 
         return await _userRepositories.CreateUser(user);
-
     }
 }

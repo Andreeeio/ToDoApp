@@ -15,9 +15,7 @@ public class AssignmentConfiguration : IEntityTypeConfiguration<Assignment>
     {
         builder.HasOne(u => u.User)
             .WithMany(u => u.Assignments)
-            .HasForeignKey(i => i.User_Id)
+            .HasForeignKey(i => i.UserId)
             .OnDelete(DeleteBehavior.Cascade);
-
-        
     }
 }

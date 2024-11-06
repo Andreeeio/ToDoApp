@@ -9,9 +9,6 @@ using ToDoApp.Application.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
 
-
-
-
 namespace ToDoApp.Application.Extentions;
 
 public static class ServiceCollectionExtentions
@@ -19,7 +16,6 @@ public static class ServiceCollectionExtentions
     public static void AddAplication(this IServiceCollection services, IConfiguration configuration) 
     {
         services.AddScoped<ITokenService, TokenService>();
-
         services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
         {
             var tokenKey = configuration["TokenKey"] ?? throw new Exception("Token key was not found");
@@ -34,14 +30,10 @@ public static class ServiceCollectionExtentions
         );
 
         services.AddScoped<IUserContext, UserContext>();
-        
-        services.AddScoped<IUserServices,UserServices>();
 
         services.AddAutoMapper(typeof(ServiceCollectionExtentions).Assembly);
         services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(ServiceCollectionExtentions).Assembly));
         services.AddHttpContextAccessor();
         services.AddValidatorsFromAssembly(typeof(ServiceCollectionExtentions).Assembly).AddFluentValidationAutoValidation();
-
     }
-
 }

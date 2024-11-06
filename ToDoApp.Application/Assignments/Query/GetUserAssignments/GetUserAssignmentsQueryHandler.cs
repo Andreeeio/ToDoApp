@@ -20,11 +20,12 @@ public class GetUserAssignmentsQueryHandler(ILogger<GetUserAssignmentsQueryHandl
     private readonly IAssignmentRepository _assignmentRepository = assignmentRepository;
     private readonly IMapper _mapper = mapper;
     private readonly IAssignmentAuthorizationService _assignmentAuthorizationService = assignmentAuthorizationService;
+
     public async Task<IEnumerable<AssignmentDTO>> Handle(GetUserAssignmentsQuery request, CancellationToken cancellationToken)
     {
         var currentUser = _userContext.GetCurrentUser();
-        var assignments = await _assignmentRepository.GetAssignmentForUser(currentUser.Id);
-        logger.LogInformation($"User with id {currentUser.Id} adding assignment");
+        var assignments = await _assignmentRepository.GetAssignmentForUser(currentUser.id);
+        logger.LogInformation($"User with id {currentUser.id} getting assignment");
 
         if (!_assignmentAuthorizationService.Authorize(ResourceOperation.Read, new Assignment()))
         {
@@ -34,6 +35,5 @@ public class GetUserAssignmentsQueryHandler(ILogger<GetUserAssignmentsQueryHandl
         var assignmentsDTO = _mapper.Map<IEnumerable<AssignmentDTO>>(assignments);
 
         return assignmentsDTO;
-
     }
 }

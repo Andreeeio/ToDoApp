@@ -11,7 +11,6 @@ namespace ToDoApp.Infrastracture.Repositories;
 
 public class UserRepositories(ToDoAppDbContext dbContext) : IUserRepositories
 {
-
     public async Task<IEnumerable<User>> GetAllUsersAsync()
     {
         var users = await dbContext.Users.ToListAsync();
@@ -29,8 +28,6 @@ public class UserRepositories(ToDoAppDbContext dbContext) : IUserRepositories
         var query = ApplyIncludes(includePredicates);
         return await query.FirstOrDefaultAsync(x => x.Email == email);
     }
-
-
 
     public async Task<int> CreateUser(User user)
     {
@@ -55,7 +52,6 @@ public class UserRepositories(ToDoAppDbContext dbContext) : IUserRepositories
         dbContext.Users.Remove(user);
         await dbContext.SaveChangesAsync();
     }
-
 
     public async Task SaveChanges() 
         => await dbContext.SaveChangesAsync();

@@ -18,6 +18,7 @@ public class DeleteUserCommandHandler(ILogger<GeneratingNewTokenCommand> logger,
     private readonly IUserContext _userContext = userContext;
     private readonly IUserAuthorizationServie _userAuthorizeServie = userAuthorizeServie;
     private readonly IUserRepositories _userRepositories = userRepositories;
+    
     public async Task Handle(DeleteUserCommand request, CancellationToken cancellationToken)
     {
         var currentUser = _userContext.GetCurrentUser();
@@ -25,15 +26,14 @@ public class DeleteUserCommandHandler(ILogger<GeneratingNewTokenCommand> logger,
         {
             throw new UnauthorizedExeption("Not found an user");
         }
-        logger.LogInformation($"Deleting an user with id {currentUser.Id}");
+        logger.LogInformation($"Deleting an user with id {currentUser.id}");
 
-        var user = await _userRepositories.GetUserById(currentUser.Id);
+        var user = await _userRepositories.GetUserById(currentUser.id);
         if (user == null)
         {
-            throw new NotFoundException(nameof(User),currentUser.Id.ToString());
+            throw new NotFoundException(nameof(User),currentUser.id.ToString());
         }
 
         await _userRepositories.DeleteUser(user);
-
     }
 }

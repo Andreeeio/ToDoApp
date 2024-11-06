@@ -16,7 +16,7 @@ public class AssignmentAuthorizationService(IUserContext userContext) : IAssignm
     {
         var user = _userContext.GetCurrentUser();
 
-        if (user != null && user.IsEmailConfirmed == false)
+        if (user != null && user.isEmailConfirmed == false)
         {
             throw new UnauthorizedExeption("Unconfirmed user");
         }
@@ -24,15 +24,15 @@ public class AssignmentAuthorizationService(IUserContext userContext) : IAssignm
         {
             return true;
         }
-        else if (resource == ResourceOperation.Read && user.Email != null) 
+        else if (resource == ResourceOperation.Read && user.email != null) 
         {
             return true;
         }
-        else if(resource == ResourceOperation.Delete && user.Id == assignment.User_Id)
+        else if(resource == ResourceOperation.Delete && user.id == assignment.UserId)
         {
             return true;
         }
-        else if (resource == ResourceOperation.Update && user.Id == assignment.User_Id)
+        else if (resource == ResourceOperation.Update && user.id == assignment.UserId)
         {
             return true;
         }

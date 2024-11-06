@@ -13,6 +13,7 @@ public class GetAllAssignmentsQueryHandler(ILogger<GetAllAssignmentsQueryHandler
 {
     private readonly IAssignmentRepository _assignmentRepository = assignmentRepository;
     private readonly IMapper _mapper = mapper;
+
     public async Task<IEnumerable<AssignmentDTO>> Handle(GetAllAssignmentsQuery request, CancellationToken cancellationToken)
     {
         logger.LogInformation("Getting all assignmments");
