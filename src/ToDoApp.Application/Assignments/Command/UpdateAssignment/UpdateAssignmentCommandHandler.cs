@@ -21,7 +21,7 @@ public class UpdateAssignmentCommandHandler(ILogger<UpdateAssignmentCommandHandl
     public async Task Handle(UpdateAssignmentCommand request, CancellationToken cancellationToken)
     {
         logger.LogInformation("Updateing an assignment");
-        var assignment = await _assignmentRepository.GetAssignmentAsync(request.Id)
+        var assignment = await _assignmentRepository.GetAssignmentByIdAsync(request.Id)
             ?? throw new NotFoundException(nameof(Assignment),request.Id.ToString());
 
         var currentUser = _userContext.GetCurrentUser()

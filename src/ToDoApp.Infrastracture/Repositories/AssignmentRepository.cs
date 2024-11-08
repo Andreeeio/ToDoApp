@@ -25,7 +25,7 @@ public class AssignmentRepository(ToDoAppDbContext dbContext) : IAssignmentRepos
         return assignment;
     }
 
-    public async Task<Assignment?> GetAssignmentAsync(int id)
+    public async Task<Assignment?> GetAssignmentByIdAsync(int id)
     {
         var assignment = await dbContext.Assignments.FirstOrDefaultAsync(x => x.Id == id);
         return assignment;

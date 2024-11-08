@@ -4,7 +4,7 @@ namespace ToDoApp.Domain.Repositories;
 
 public interface IAssignmentRepository
 {
-    Task<Assignment?> GetAssignmentAsync(int id);
+    Task<Assignment?> GetAssignmentByIdAsync(int id);
     Task DeleteAssignmentAsync(Assignment assignment);
     Task<IEnumerable<Assignment>> GetAssignmentsAsync();
     Task AddAssignment(Assignment assignment);

@@ -22,7 +22,7 @@ public class DeleteAssignmentCommandHandler(ILogger<DeleteAssignmentCommandHandl
     public async Task Handle(DeleteAssignmentCommand request, CancellationToken cancellationToken)
     {
         logger.LogInformation($"Deleting and assignment with id: {request.Id}");
-        var assignment = await _assignmentRepository.GetAssignmentAsync(request.Id);
+        var assignment = await _assignmentRepository.GetAssignmentByIdAsync(request.Id);
 
         if (assignment == null) 
             throw new NotFoundException(nameof(Assignment),request.Id.ToString());

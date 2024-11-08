@@ -24,7 +24,7 @@ public class CompletAssignmentCommandHandler(ILogger<AddAssignmentCommandHandler
     {
         logger.LogInformation("Completing an assignment");
 
-        var assignment = await _assignmentRepository.GetAssignmentAsync(request.Id);
+        var assignment = await _assignmentRepository.GetAssignmentByIdAsync(request.Id);
 
         if (assignment == null)
             throw new NotFoundException(nameof(Assignment), request.Id.ToString());
