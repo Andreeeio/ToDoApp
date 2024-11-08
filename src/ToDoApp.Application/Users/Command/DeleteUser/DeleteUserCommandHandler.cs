@@ -28,11 +28,8 @@ public class DeleteUserCommandHandler(ILogger<GeneratingNewTokenCommand> logger,
         }
         logger.LogInformation($"Deleting an user with id {currentUser.id}");
 
-        var user = await _userRepositories.GetUserById(currentUser.id);
-        if (user == null)
-        {
-            throw new NotFoundException(nameof(User),currentUser.id.ToString());
-        }
+        var user = await _userRepositories.GetUserById(currentUser.id) 
+            ?? throw new NotFoundException(nameof(User), currentUser.id.ToString());
 
         await _userRepositories.DeleteUser(user);
     }

@@ -18,12 +18,8 @@ public class GetUserByIdQueryHandler(ILogger<GetUserByIdQueryHandler> logger
     {
         logger.LogInformation(@"Get user with id {id}", request.Id);
 
-        var user = await _userRepositories.GetUserById(request.Id);
-
-        if (user == null)
-        {
-            throw new NotFoundException(nameof(User),request.Id.ToString());
-        }
+        var user = await _userRepositories.GetUserById(request.Id) 
+            ?? throw new NotFoundException(nameof(User), request.Id.ToString());
 
         var userDTO = _mapper.Map<UserDTO>(user);
         return userDTO;
