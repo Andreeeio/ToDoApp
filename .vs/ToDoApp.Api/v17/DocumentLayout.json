@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D5A3ED6-6D5F-4008-A2C6-BD92DC827034}|src\\ToDoApp.Infrastracture\\ToDoApp.Infrastracture.csproj|c:\\users\\konradl\\desktop\\projekty\\webapi\\todoapp.api\\src\\todoapp.infrastracture\\repositories\\userrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D5A3ED6-6D5F-4008-A2C6-BD92DC827034}|src\\ToDoApp.Infrastracture\\ToDoApp.Infrastracture.csproj|solutionrelative:src\\todoapp.infrastracture\\repositories\\userrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F38602CD-2D0B-41B4-8611-83BD67BA5BC2}|test\\ToDoApp.Infrastracture.Test\\ToDoApp.Infrastracture.Test.csproj|c:\\users\\konradl\\desktop\\projekty\\webapi\\todoapp.api\\test\\todoapp.infrastracture.test\\repositories\\userrepositoriestests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F38602CD-2D0B-41B4-8611-83BD67BA5BC2}|test\\ToDoApp.Infrastracture.Test\\ToDoApp.Infrastracture.Test.csproj|solutionrelative:test\\todoapp.infrastracture.test\\repositories\\userrepositoriestests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F38602CD-2D0B-41B4-8611-83BD67BA5BC2}|test\\ToDoApp.Infrastracture.Test\\ToDoApp.Infrastracture.Test.csproj|c:\\users\\konradl\\desktop\\projekty\\webapi\\todoapp.api\\test\\todoapp.infrastracture.test\\todoapp.infrastracture.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F38602CD-2D0B-41B4-8611-83BD67BA5BC2}|test\\ToDoApp.Infrastracture.Test\\ToDoApp.Infrastracture.Test.csproj|solutionrelative:test\\todoapp.infrastracture.test\\todoapp.infrastracture.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +22,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserRepositories.cs",
+              "DocumentMoniker": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\src\\ToDoApp.Infrastracture\\Repositories\\UserRepositories.cs",
+              "RelativeDocumentMoniker": "src\\ToDoApp.Infrastracture\\Repositories\\UserRepositories.cs",
+              "ToolTip": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\src\\ToDoApp.Infrastracture\\Repositories\\UserRepositories.cs",
+              "RelativeToolTip": "src\\ToDoApp.Infrastracture\\Repositories\\UserRepositories.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T15:53:30.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserRepositoriesTests.cs",
+              "DocumentMoniker": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\test\\ToDoApp.Infrastracture.Test\\Repositories\\UserRepositoriesTests.cs",
+              "RelativeDocumentMoniker": "test\\ToDoApp.Infrastracture.Test\\Repositories\\UserRepositoriesTests.cs",
+              "ToolTip": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\test\\ToDoApp.Infrastracture.Test\\Repositories\\UserRepositoriesTests.cs",
+              "RelativeToolTip": "test\\ToDoApp.Infrastracture.Test\\Repositories\\UserRepositoriesTests.cs",
+              "ViewState": "AQIAAIkAAAAAAAAAAAAqwHYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T13:16:29.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ToDoApp.Infrastracture.Test.csproj",
+              "DocumentMoniker": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\test\\ToDoApp.Infrastracture.Test\\ToDoApp.Infrastracture.Test.csproj",
+              "RelativeDocumentMoniker": "test\\ToDoApp.Infrastracture.Test\\ToDoApp.Infrastracture.Test.csproj",
+              "ToolTip": "C:\\Users\\Konradl\\Desktop\\projekty\\WebApi\\ToDoApp.Api\\test\\ToDoApp.Infrastracture.Test\\ToDoApp.Infrastracture.Test.csproj",
+              "RelativeToolTip": "test\\ToDoApp.Infrastracture.Test\\ToDoApp.Infrastracture.Test.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-06T13:10:32.929Z"
             }
           ]
         }
